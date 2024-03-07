@@ -86,10 +86,10 @@ h1 {
 }
 
 #nameh1 {
-  font-size: 7rem;
+  font-size: 4rem;
   color: #53ed6a;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 50px;
   padding-right: 20px;
 }
 
@@ -152,6 +152,11 @@ h3 {
 #resumeMain {
   justify-content: center;
   margin-top: 20px;
+}
+
+#educationMain {
+  justify-content: center;
+  margin-top: 30px;
 }
 
 #resumeMain a {
@@ -240,7 +245,9 @@ p {
 #aboutMeTitle,
 #projectsTitle,
 #resumeTitle,
-#contactTitle {
+#contactTitle,
+#educationTitle
+{
   padding-top: 100px;
 }
 
@@ -266,6 +273,12 @@ p {
   padding-bottom: 10px;
 }
 
+#educationTitle {
+  text-align: center;
+  padding-bottom: 10px ;
+}
+
+
 #aboutMeMain,
 #hobbiesMain,
 #skillsMain {
@@ -281,7 +294,8 @@ p {
 #recipix,
 #racehopper,
 #botbuddies,
-#resume {
+#resume 
+{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -290,7 +304,7 @@ p {
 
 #aboutMe,
 #skillsDiv {
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
 #skillsMain {
@@ -361,15 +375,16 @@ button:hover {
 }
 
 #selfpic {
-  width: 320px;
-  height: 320px;
+  width: 330px;
+  height: 400px;
   border-top-left-radius: 30%;
   border-bottom-right-radius: 30%;
-  background-image: url("/assets/portfolionobg.png");
+  background-image: url("assets/tech/my-passport-photo\ \(4\)\ .jpg");
   background-color: #1b1c1c;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* padding-top: 100px; */
   margin: 60px;
   filter: grayscale(1);
   transition: all 1s ease;
@@ -421,12 +436,12 @@ button:hover {
 #hp {
   background-image: url("/assets/hobbies/hp.png");
 }
-#pho {
+/* #pho {
   background-image: url("/assets/hobbies/noodles.png");
 }
 #sushi {
   background-image: url("/assets/hobbies/sushi.png");
-}
+} */
 
 .techDiv {
   width: 320px;
@@ -526,34 +541,34 @@ button:hover {
   background-size: cover;
 }
 #recipixslide1 {
-  background-image: url("/assets/recipix/recipixslide1.jpg");
+  background-image: url("/assets/recipix/firstpage.png");
 }
 #recipixslide2 {
-  background-image: url("/assets/recipix/recipixslide2.png");
+  background-image: url("/assets/recipix/thirdpage.png");
 }
 #recipixslide3 {
-  background-image: url("/assets/recipix/recipixslide3.png");
+  background-image: url("/assets/recipix/secondpage.png");
   background-size: contain;
 }
 #recipixslide4 {
-  background-image: url("/assets/recipix/recipixslide4.png");
+  background-image: url("/assets/recipix/fourthpage.png");
   background-size: contain;
 }
-#recipixslide5 {
+/* #recipixslide5 {
   background-image: url("/assets/recipix/recipixteam.JPG");
-}
+} */
 
 #raceslide1 {
   background-image: url("/assets/racehopper/racelevel1.png");
 }
 #raceslide2 {
-  background-image: url("/assets/racehopper/racelevel2.png");
+  background-image: url("/assets/racehopper/mainPage.png");
 }
 #raceslide3 {
-  background-image: url("/assets/racehopper/racelevel3.png");
+  background-image: url("/assets/racehopper/secondmainpage.png");
 }
 #raceslide4 {
-  background-image: url("/assets/racehopper/ianracehopper1.jpg");
+  background-image: url("/assets/racehopper/footer.png");
 }
 #botbuddiesslide1 {
   background-image: url("/assets/botbuddies/botbuddiesslide1.jpg");
@@ -1017,3 +1032,90 @@ footer {
     background-color: #333333;
   }
 }
+
+.timeline-wrapper {
+  position: relative;
+  padding: 10px 0;
+}
+.timeline-wrapper:last-child:before {
+  height: 0;
+}
+.timeline-wrapper:before {
+  content: "";
+  background: #474559;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 38px;
+}
+
+.timeline-yr {
+  background: #474559;
+  border-radius: 100%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+}
+.timeline-yr span {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  line-height: 75px;
+}
+
+.timeline-info {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 432px;
+  margin-left: 6em;
+}
+.timeline-info small {
+  color: #474559;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 90px;
+}
+
+.carousel-item img {
+  width: 30%;
+  height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+  color: white;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev {
+  left: -3%;
+}
+
+.carousel-control-next {
+  right: -3%;
+}
+
